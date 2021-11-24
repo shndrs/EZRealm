@@ -10,6 +10,7 @@
 		9EBAD311F8221FF79490D664 /* Pods_EZRealm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B174FFAB3A0EFDECA17E4368 /* Pods_EZRealm.framework */; };
 		F4C1D747274E32B600341413 /* EZRealm.h in Headers */ = {isa = PBXBuildFile; fileRef = F4C1D746274E32B600341413 /* EZRealm.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F4CF6F89274E3D8A001CD969 /* Typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CF6F88274E3D8A001CD969 /* Typealias.swift */; };
+		F4CF6F8B274E3DC2001CD969 /* CRUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CF6F8A274E3DC2001CD969 /* CRUD.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		F4C1D743274E32B600341413 /* EZRealm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EZRealm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4C1D746274E32B600341413 /* EZRealm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EZRealm.h; sourceTree = "<group>"; };
 		F4CF6F88274E3D8A001CD969 /* Typealias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealias.swift; sourceTree = "<group>"; };
+		F4CF6F8A274E3DC2001CD969 /* CRUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRUD.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				F4CF6F88274E3D8A001CD969 /* Typealias.swift */,
+				F4CF6F8A274E3DC2001CD969 /* CRUD.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4CF6F89274E3D8A001CD969 /* Typealias.swift in Sources */,
+				F4CF6F8B274E3DC2001CD969 /* CRUD.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
