@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9EBAD311F8221FF79490D664 /* Pods_EZRealm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B174FFAB3A0EFDECA17E4368 /* Pods_EZRealm.framework */; };
 		F4C1D747274E32B600341413 /* EZRealm.h in Headers */ = {isa = PBXBuildFile; fileRef = F4C1D746274E32B600341413 /* EZRealm.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4CF6F89274E3D8A001CD969 /* Typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CF6F88274E3D8A001CD969 /* Typealias.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,6 +18,7 @@
 		CFE708BDFF28E4AA684669FC /* Pods-EZRealm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EZRealm.debug.xcconfig"; path = "Target Support Files/Pods-EZRealm/Pods-EZRealm.debug.xcconfig"; sourceTree = "<group>"; };
 		F4C1D743274E32B600341413 /* EZRealm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EZRealm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4C1D746274E32B600341413 /* EZRealm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EZRealm.h; sourceTree = "<group>"; };
+		F4CF6F88274E3D8A001CD969 /* Typealias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealias.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +39,6 @@
 				CFE708BDFF28E4AA684669FC /* Pods-EZRealm.debug.xcconfig */,
 				389EBF1DB4DD3522556DC58B /* Pods-EZRealm.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -70,9 +71,18 @@
 		F4C1D745274E32B600341413 /* EZRealm */ = {
 			isa = PBXGroup;
 			children = (
+				F4CF6F87274E3D7E001CD969 /* Other */,
 				F4C1D746274E32B600341413 /* EZRealm.h */,
 			);
 			path = EZRealm;
+			sourceTree = "<group>";
+		};
+		F4CF6F87274E3D7E001CD969 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				F4CF6F88274E3D8A001CD969 /* Typealias.swift */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +129,7 @@
 				TargetAttributes = {
 					F4C1D742274E32B600341413 = {
 						CreatedOnToolsVersion = 13.0;
+						LastSwiftMigration = 1300;
 					};
 				};
 			};
@@ -180,6 +191,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4CF6F89274E3D8A001CD969 /* Typealias.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +324,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CFE708BDFF28E4AA684669FC /* Pods-EZRealm.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -331,6 +344,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -340,6 +354,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 389EBF1DB4DD3522556DC58B /* Pods-EZRealm.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
