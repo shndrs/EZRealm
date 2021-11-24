@@ -7,10 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9EBAD311F8221FF79490D664 /* Pods_EZRealm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B174FFAB3A0EFDECA17E4368 /* Pods_EZRealm.framework */; };
 		F4C1D747274E32B600341413 /* EZRealm.h in Headers */ = {isa = PBXBuildFile; fileRef = F4C1D746274E32B600341413 /* EZRealm.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		389EBF1DB4DD3522556DC58B /* Pods-EZRealm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EZRealm.release.xcconfig"; path = "Target Support Files/Pods-EZRealm/Pods-EZRealm.release.xcconfig"; sourceTree = "<group>"; };
+		B174FFAB3A0EFDECA17E4368 /* Pods_EZRealm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EZRealm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFE708BDFF28E4AA684669FC /* Pods-EZRealm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EZRealm.debug.xcconfig"; path = "Target Support Files/Pods-EZRealm/Pods-EZRealm.debug.xcconfig"; sourceTree = "<group>"; };
 		F4C1D743274E32B600341413 /* EZRealm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EZRealm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4C1D746274E32B600341413 /* EZRealm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EZRealm.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -20,17 +24,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EBAD311F8221FF79490D664 /* Pods_EZRealm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		32D1FE8DEF20E446E1CB3334 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CFE708BDFF28E4AA684669FC /* Pods-EZRealm.debug.xcconfig */,
+				389EBF1DB4DD3522556DC58B /* Pods-EZRealm.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6A4F1E861EE7D9E76A2CF70A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B174FFAB3A0EFDECA17E4368 /* Pods_EZRealm.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F4C1D739274E32B600341413 = {
 			isa = PBXGroup;
 			children = (
 				F4C1D745274E32B600341413 /* EZRealm */,
 				F4C1D744274E32B600341413 /* Products */,
+				32D1FE8DEF20E446E1CB3334 /* Pods */,
+				6A4F1E861EE7D9E76A2CF70A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,6 +93,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F4C1D74A274E32B600341413 /* Build configuration list for PBXNativeTarget "EZRealm" */;
 			buildPhases = (
+				B5EF98C7E6A82AD08B12D1C4 /* [CP] Check Pods Manifest.lock */,
 				F4C1D73E274E32B600341413 /* Headers */,
 				F4C1D73F274E32B600341413 /* Sources */,
 				F4C1D740274E32B600341413 /* Frameworks */,
@@ -123,6 +149,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B5EF98C7E6A82AD08B12D1C4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EZRealm-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F4C1D73F274E32B600341413 /* Sources */ = {
@@ -259,6 +310,7 @@
 		};
 		F4C1D74B274E32B600341413 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFE708BDFF28E4AA684669FC /* Pods-EZRealm.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -286,6 +338,7 @@
 		};
 		F4C1D74C274E32B600341413 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 389EBF1DB4DD3522556DC58B /* Pods-EZRealm.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
