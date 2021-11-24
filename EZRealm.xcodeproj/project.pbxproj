@@ -12,6 +12,7 @@
 		F4CF6F89274E3D8A001CD969 /* Typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CF6F88274E3D8A001CD969 /* Typealias.swift */; };
 		F4CF6F8B274E3DC2001CD969 /* CRUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CF6F8A274E3DC2001CD969 /* CRUD.swift */; };
 		F4CF6F8D274E3DF1001CD969 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CF6F8C274E3DF1001CD969 /* Strings.swift */; };
+		F4CF6F90274E3E30001CD969 /* DBDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CF6F8F274E3E30001CD969 /* DBDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		F4CF6F88274E3D8A001CD969 /* Typealias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealias.swift; sourceTree = "<group>"; };
 		F4CF6F8A274E3DC2001CD969 /* CRUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRUD.swift; sourceTree = "<group>"; };
 		F4CF6F8C274E3DF1001CD969 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		F4CF6F8F274E3E30001CD969 /* DBDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,11 +86,20 @@
 		F4CF6F87274E3D7E001CD969 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				F4CF6F8E274E3E24001CD969 /* Protocol */,
 				F4CF6F88274E3D8A001CD969 /* Typealias.swift */,
 				F4CF6F8A274E3DC2001CD969 /* CRUD.swift */,
 				F4CF6F8C274E3DF1001CD969 /* Strings.swift */,
 			);
 			path = Other;
+			sourceTree = "<group>";
+		};
+		F4CF6F8E274E3E24001CD969 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				F4CF6F8F274E3E30001CD969 /* DBDataSource.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +210,7 @@
 			files = (
 				F4CF6F89274E3D8A001CD969 /* Typealias.swift in Sources */,
 				F4CF6F8D274E3DF1001CD969 /* Strings.swift in Sources */,
+				F4CF6F90274E3E30001CD969 /* DBDataSource.swift in Sources */,
 				F4CF6F8B274E3DC2001CD969 /* CRUD.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
